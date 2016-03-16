@@ -41,7 +41,7 @@ public class TCFinder
 
         SparkConf sparkConf = new SparkConf()
                 .setAppName("TrajectoryCompanionFinder")
-                .set("spark.cassandra.connection.host", "127.0.0.1"); //
+                .set("spark.cassandra.connection.host", "172.17.0.19"); //
 
         // force to local mode if it is debug
         if (debugMode) sparkConf.setMaster("local[*]");
