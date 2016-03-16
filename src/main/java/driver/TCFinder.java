@@ -121,13 +121,14 @@ public class TCFinder
         try {
 
             // input
+            /* Commented out because we are using cassandra
             if (cmd.hasOption(Cli.OPT_STR_INPUTFILE)) {
                 inputFilePath = cmd.getOptionValue(Cli.OPT_STR_INPUTFILE);
             } else {
                 System.err.println("Input file not defined. Aborting...");
                 parser.help();
             }
-
+            */
             // output
             if (cmd.hasOption(Cli.OPT_STR_OUTPUTDIR)) {
                 outputDir = cmd.getOptionValue(Cli.OPT_STR_OUTPUTDIR);
